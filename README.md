@@ -13,17 +13,17 @@ You can download the current release of Aurora Incident Response from the Releas
 Aurora Incident Response is available for MacOS, Windows and Linux. We are working on making it available for
 iPads and Android Tablets as well.
 
-## 1.2 Developement
+## 1.2 Development
 
 If you want to contribute, you are encouraged to do so. I'd totally like to see the tool growing. 
 The whole application is build on an electron base and written in plain javascript and html.
 Even though technically I could have used node.js modules for functionality like webdav I refrained from it.
 The reason is, that node modules will not run out of the box when migrating the code to phonegap for IOS and Android.
-The good news is, it's really fast to set uo your development environment. I personally use Webstorm but it should work with pretty much any IDE.
+The good news is, it's really fast to set up your development environment. I personally use Webstorm but it should work with pretty much any IDE.
 
 ### 1.2.1 Set up your build environment
 
-As pointed out in the description, Aurora Incident Response is built ib top of Electron which allows for multi platform compatibility.
+As pointed out in the description, Aurora Incident Response is built on top of Electron which allows for multi platform compatibility.
 You can easily install your tool chain the following way.
 
 Start by installing node.js. Follow the links to their download page.
@@ -93,7 +93,7 @@ It's actually a very similar concept to the NTFS dirty bit.
 This is the main aurora file that strings together all scripts and stylesheets. It also initiates the GUI. other than that it has no functionality.
  
 #### 1.2.4.3 gui_definitions.js
-I tried as good as I can to separate code an design. This file holds all the definition json for the w2ui gui. There is some code left in there
+I tried as good as I can to separate code and design. This file holds all the definition json for the w2ui gui. There is some code left in there
 for the renderers that format certain columns. It didn't make sense to place them anywhere else.
  
 #### 1.2.4.4 controller.js
@@ -104,7 +104,7 @@ Every now and then operations happen that change something in the gui. That coul
 All these functions are located in this file.
   
 #### 1.2.4.6 data.js
-While the actual data is stored in the w2ui datasctructures, for saving and some other operations we need to bring it into out format. 
+While the actual data is stored in the w2ui data structures, for saving and some other operations we need to bring it into out format.
 Transformations like this and all logic regarding saving and opening files is located here.
  
 #### 1.2.4.7 data_template.js
